@@ -1,0 +1,16 @@
+[project]
+name = "lanthei-cli"
+version = "0.1.0"
+description = "A simple CLI that chats with Gemini using your own API key"
+requires-python = ">=3.9"
+dependencies = ["openai"]
+
+[project.scripts]
+lanthei = "lanthei.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["lanthei"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
