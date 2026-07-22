@@ -1,7 +1,24 @@
----
-license: other
----
-# Lanthei
+# Lanthei CLI
 
-A practice dataset built from the public IMDb dataset, split into train/validation/test (80/10/10).
-Created as a learning project using streaming, no full download required.
+A simple command-line tool that lets you chat with Google's Gemini AI directly from your terminal — using your own free API key.
+
+## Install
+
+pip install lanthei-cli
+
+## Usage
+
+lanthei "explain what a python list comprehension is"
+
+lanthei explain myfile.py
+
+lanthei fix myfile.py "add error handling"
+
+## Requirements
+
+- Python 3.9+
+- A free Gemini API key from Google AI Studio
+
+## License
+
+MIT
